@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Libro{% endblock %}
+
+{% block body %}
+    <div class="container">
+    <div class="row">
+    <div class="col-6 mx-auto p-4 m-5 border-light shadow-sm">
+    <h1 class="pb-3">Agregar Libro</h1>
+    {{ include('libro/_form.html.twig') }}
+    
+    <a href="{{ path('app_libro_index') }}" class="btn btn-warning w-100 font-weight-bold mt-2" >Cancelar</a>
+    </div>
+    </div>
+    </div>
+{% endblock %}

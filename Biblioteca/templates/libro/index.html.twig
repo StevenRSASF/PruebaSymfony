@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Libro index{% endblock %}
+
+{% block body %}
+    <center>
+        <h1>Biblioteca</h1>
+        <a href="{{ path('app_libro_new') }}" class="btn btn-primary"><b> + </b>Agregar libro</a>
+    </center>
+    
+    <div class="container">
+    <table class="table table-striped custab">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Titulo</th>
+                <th>Descripcion</th>
+                <th>AnioPublicacion</th>
+                <th>Autor</th>
+                <th class="text-center">Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for libro in libros %}
+            <tr>
+                <td>{{ libro.id }}</td>
+                <td>{{ libro.titulo }}</td>
+                <td>{{ libro.descripcion }}</td>
+                <td>{{ libro.anioPublicacion ? libro.anioPublicacion|date('Y-m-d') : '' }}</td>
+                <td>{{ libro.autor }}</td>
+                <td>
+                    <a href="{{ path('app_libro_show', {'id': libro.id}) }}" class="btn btn-info btn-xs' hr">Mostrar</a>
+                    <a href="{{ path('app_libro_edit', {'id': libro.id}) }}" class="btn btn-primary btn-xs' hr">Editar</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    </div>
+{% endblock %}
