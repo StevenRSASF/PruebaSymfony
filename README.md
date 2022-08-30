@@ -1,3 +1,5 @@
 # PruebaSymfony
 Capacitación Symfony
  –ExamenInstruccionesElaboraruna webapp para una bibliotecacon todas las accionesde un CRUD (Create, Read, Update, Delete). El sistemaconsistirá en unaaplicación web que sirva parael inventario de los libros que poseen, el registro de cada libro debe tener la siguiente información:•Id•Titulo•Breve descripción•Año de publicación•AutorPor lo tanto, en el sistema se debe poder visualizar los libros en stock, registrar un libro que reciéningreso, actualizar la información de un libro existente y eliminar el libro en caso de ser necesario. Los tipos de datos quedan a su discreción. Se calificará1.Uso correcto del frameworkSymfonyy su arquitectura MVC2.Uso de librerías externas para darle estilos (Bootstrap)3.Funcionamiento de rutas4.Configuraciones correctas para la conexión a base datosEntregablesSe debe enviar al correo milen.ortega@sasf.netla URL de un repositorio PÚBLICOque contenga:1.Proyecto symfony con la solución2.Documento con capturas de pantalla que contenga pruebas de sus resultados(pantallas de las vistas y de los registros en la base de datos).
+
+ Symfony 6
